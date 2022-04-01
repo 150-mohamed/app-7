@@ -1,0 +1,312 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.bg-myNav{
+  transition: background-color 2s , padding 2s;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999;
+}
+#Loading{
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color:#888;
+  position: fixed;
+  z-index: 9999999999999999999999999;
+  display:flex ;
+}
+.home{
+  background-image: url('../imge/hero-bg.jpg');
+  height: 100vh;
+  background-size:100% 100%;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.bg-main{
+  background-color: #ff206e !important;
+}
+#btnUp{
+  position: fixed;
+  bottom:30px ;
+  right: 30px;
+  z-index: 9;
+  display: none;
+}
+.home_layer{
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.layerContant{
+  color: white;
+  text-align: center;
+}
+h1{
+  font-size: 65px;
+}
+.typingClass::after{
+  content: "";
+  animation-name:typingslill ;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+@keyframes typingSkils{
+  0% {content:"|";}
+  2% {content:"D|";}
+  4% {content:"De|";}
+  6% {content:"Dev|";}
+  8% {content:"Deve|";}
+  10% {content:"Devel|";}
+  12% {content:"Develo|";}
+  14% {content:"Develop|";}
+  16% {content:"Develope|";}
+  18% {content:"Developer|";}
+  30% {content:"Develope|";}
+  28% {content:"Develop|";}
+  26% {content:"Develo|";}
+  24% {content:"Devel|";}
+  22% {content:"Deve|";}
+  20% {content:"Dev|";}
+  18% {content:"De|";}
+  16% {content:"D|";}
+  14% {content:"|";}
+  100%{}
+}
+.skil-item P{
+  margin: 7PX;
+}
+.lead{
+  font-size: 1.25rem;
+  font-size: 300;
+}
+.title-left{
+  font-size: 2rem;
+}
+h2::after{
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: #0078ff;
+  left: 0;
+  bottom: 0px;
+}
+.about{
+  background-color: #f5f5f5;
+}
+
+.card{
+  border: 0px;
+}
+.portfolio{
+  padding: 60px 0px;
+}
+.card-body-icon{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.card:hover img{
+  transform: scale(1.5,1.5);
+}
+.card img{
+  transition: transform 2s ease-in-out;
+}
+.card-img{
+  overflow: hidden;
+}
+.portfolio h2{
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.line{
+  width: 80px;
+  height: 5px;
+}
+.carouselPart{
+  background-image: url('../imge/overlay-bg.jpg');
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+.carouselLayer{
+  background-color: rgba(0, 0, 255, 0.6);
+}
+.carousel-indicators{
+  top: 100%;
+}
+.carousel-indicators [data-bs-target] {
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 50%;
+}
+#contact{
+  background-image:url(../imge/overlay-bg.jpg) ;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed
+}
+.bg-blue{
+  background-color: rgba(0,120 ,255 ,0.7 );
+}
+.contact-icon{
+  color: blue;
+}
+.contact-icon i{
+  border: 3px solid #0078ff;
+  border-radius: 50%;
+  color: #1e1e1e ;
+  padding: 10px;
+  margin-right:1rem ;
+}
+.contact-icon i:hover{
+  background-color: #0078ff;
+  border: 3px solid #cde1f8;
+  counter-reset: #fff;
+}
+.title-leftt{
+  font-size: 2rem;
+  color: #1e1e1e;
+  position: relative;
+}
+.title-leftt::before{
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100px;
+  background-color: #0078ff;
+  bottom: -12px;
+}
+.form-btn .btn{
+  padding: 10px 24px;
+  border: 0;
+}
+.form-btn .btn:hover{
+  background-color: #3393ff;
+  box-shadow: 0 0 4px #cde1f8;
+}
+.lead{
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+.card-body a{
+  text-decoration: none;
+  font-size: 20px;
+}
+.left-card img{
+  width:40px !important;
+}
+.positionedtitlt{
+  transform: translate(-50% ,50%) ;
+}
+.spinner {
+  margin: 100px auto;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
+}
+.spinner > div {
+  background-color: #fff;
+  height: 100%;
+  width: 6px;
+  display: inline-block; 
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+#sideBar{
+    position: fixed;
+    left: 0;
+    top: 150px;
+    z-index: 999;
+}
+.color-box{
+  background-color: #ccc;
+  padding: 10px;
+}
+.color-item{
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  cursor: pointer;
+}
+#sideBar i{
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+}
